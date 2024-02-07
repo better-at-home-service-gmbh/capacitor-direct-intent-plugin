@@ -18,14 +18,6 @@ public class IntentsPlugin extends Plugin {
 
     private Intents implementation = new Intents();
 
-    @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
-
-        JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
-        call.resolve(ret);
-    }
 
     @PluginMethod
     public void sendIntent(PluginCall call) {
