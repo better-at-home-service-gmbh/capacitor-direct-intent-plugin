@@ -1,3 +1,5 @@
+/* eslint import/newline-after-import: "off" */
+
 import { registerPlugin } from '@capacitor/core';
 
 import type { IntentsPlugin } from './definitions';

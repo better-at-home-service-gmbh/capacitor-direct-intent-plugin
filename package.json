@@ -65,6 +65,18 @@
   "prettier": "@ionic/prettier-config",
   "swiftlint": "@ionic/swiftlint-config",
   "eslintConfig": {
+    "rules": {
+      
+      "@typescript-eslint/explicit-module-boundary-types": "off"
+    },
+    "overrides": [
+      {
+        "files": ["*.ts", "*.mts", "*.cts", "*.tsx"],
+        "rules": {
+          "@typescript-eslint/explicit-module-boundary-types": "error"
+        }
+      }
+    ],
     "extends": "@ionic/eslint-config/recommended"
   },
   "capacitor": {
@@ -74,5 +86,8 @@
     "android": {
       "src": "android"
     }
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.29.1"
   }
 }
