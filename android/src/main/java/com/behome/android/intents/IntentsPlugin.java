@@ -66,7 +66,7 @@ public class IntentsPlugin extends Plugin {
         l.put("data", data);
 
         call.resolve(l);     
-    },
+    }
 
     @PluginMethod
     public void finish(PluginCall call) {
