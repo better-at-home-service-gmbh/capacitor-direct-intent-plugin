@@ -14,6 +14,8 @@ npx cap sync
 <docgen-index>
 
 * [`sendIntent(...)`](#sendintent)
+* [`checkIntentReceived()`](#checkintentreceived)
+* [`finish()`](#finish)
 * [Interfaces](#interfaces)
 
 </docgen-index>
@@ -30,6 +32,26 @@ sendIntent(options: IntentCall) => Promise<void>
 | Param         | Type                                              |
 | ------------- | ------------------------------------------------- |
 | **`options`** | <code><a href="#intentcall">IntentCall</a></code> |
+
+--------------------
+
+
+### checkIntentReceived()
+
+```typescript
+checkIntentReceived() => Promise<IntentCall>
+```
+
+**Returns:** <code>Promise&lt;<a href="#intentcall">IntentCall</a>&gt;</code>
+
+--------------------
+
+
+### finish()
+
+```typescript
+finish() => void
+```
 
 --------------------
 

@@ -51,4 +51,25 @@ public class IntentsPlugin extends Plugin {
         }
         call.resolve();
     }
+
+    @PluginMethod
+    public void checkSendIntentReceived(PluginCall call) {
+        Intent intent = bridge.getActivity().getIntent();
+        String action = intent.getAction();
+        String type = intent.getType();
+        String data = intent.getDataString();
+
+        JSObject l = new JSObject();
+
+        l.put("title", "Timer");
+        l.put("description", "nah Id win");
+        l.put("data", data);
+
+        call.resolve(l);     
+    },
+
+    @PluginMethod
+    public void finish(PluginCall call) {
+        bridge.getActivity().finish();
+    }
 }

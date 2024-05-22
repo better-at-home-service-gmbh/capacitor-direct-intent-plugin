@@ -1,7 +1,7 @@
 {
   "name": "cap-android-intents",
-  "version": "0.0.1",
-  "description": "Capacitor plugin. Enables sending and receiving of direct intents",
+  "version": "1.0.7",
+  "description": "Capacitor plugin. Enables sending of direct and broadcast intents. Android only",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",

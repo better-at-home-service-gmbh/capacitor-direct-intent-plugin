@@ -1,5 +1,11 @@
+/**
+ * @author Jounes Jedlaoui
+ */
+
 export interface IntentsPlugin {
   sendIntent(options: IntentCall): Promise<void>;
+  checkIntentReceived(): Promise<IntentCall>;
+  finish(): void;
 }
 
 export interface IntentCall {

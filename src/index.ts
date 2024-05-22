@@ -1,4 +1,7 @@
 /* eslint import/newline-after-import: "off" */
+/**
+ * @author Jounes Jedlaoui
+ */
 
 import { registerPlugin } from '@capacitor/core';
 
