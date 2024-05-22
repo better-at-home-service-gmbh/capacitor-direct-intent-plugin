@@ -59,7 +59,7 @@ await Intents.sendIntent({action: "intent.action.example",
 ```typescript
 sendIntent(options: IntentCall) => Promise<void>
 ```
-Send either direct or broadcast intent.
+
 | Param         | Type                                              |
 | ------------- | ------------------------------------------------- |
 | **`options`** | <code><a href="#intentcall">IntentCall</a></code> |
@@ -92,12 +92,12 @@ finish() => void
 
 #### IntentCall
 
-| Prop            | Type                                 | Description                                        |        
-| --------------- | ------------------------------------ | -------------------------------------------------- |
-| **`action`**    | <code>string</code>                  | Intent action                                      |
-| **`extra`**     | <code>{ [key: string]: any; }</code> | Object containing extras                           |
-| **`data`**      | <code>{ [key: string]: any; }</code> | Object containing data                             |
-| **`isDirect`**  | <code>boolean</code>                 | Boolean: false for Broadcast                       |
-| **`component`** | <code>{ [key: string]: any; }</code> | Direct-Intent only. Contains Package and Component |
+| Prop            | Type                                 |
+| --------------- | ------------------------------------ |
+| **`action`**    | <code>string</code>                  |
+| **`extra`**     | <code>{ [key: string]: any; }</code> |
+| **`data`**      | <code>{ [key: string]: any; }</code> |
+| **`isDirect`**  | <code>boolean</code>                 |
+| **`component`** | <code>{ [key: string]: any; }</code> |
 
 </docgen-api>

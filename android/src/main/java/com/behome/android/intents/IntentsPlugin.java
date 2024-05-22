@@ -61,8 +61,9 @@ public class IntentsPlugin extends Plugin {
 
         JSObject l = new JSObject();
 
-        l.put("title", "Timer");
-        l.put("description", "nah Id win");
+        l.put("title", "Intent");
+        l.put("action", action);
+        l.put("type", type);
         l.put("data", data);
 
         call.resolve(l);     
